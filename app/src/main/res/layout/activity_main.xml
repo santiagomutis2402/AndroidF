@@ -7,7 +7,7 @@
     android:background="@color/MoradoFondo"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".login.MainActivity">
+    tools:context=".Activitys.Login.LoginActivity">
 
     <ImageView
         android:layout_width="190dp"
@@ -90,7 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="25dp"
-            android:onClick="onClick"
+            android:onClick="IniciarSesion"
             android:background="@color/Morado"
             android:fontFamily="@font/ralebo"
             android:text="Login" />
@@ -119,7 +119,7 @@
                 android:background="#0000"
                 android:fontFamily="@font/m"
                 android:gravity="right"
-                android:onClick="onClick"
+                android:onClick="Registrarse"
                 android:text="Registrarse"
                 android:textColor="@color/white" />
 
@@ -130,6 +130,7 @@
                 android:layout_alignParentRight="true"
                 android:background="#0000"
                 android:fontFamily="@font/m"
+                android:onClick="RecuperarContraseña"
                 android:gravity="right"
                 android:text="Recuperar\nContraseña"
                 android:textColor="@color/white" />

@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/drawable-v24/cancel.xml" value="0.193" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/drawable-v24/cargando.xml" value="0.205" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/drawable-v24/rounded_item.xml" value="0.193" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/drawable-v24/salirwh.xml" value="0.17" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/drawable-v24/volver.xml" value="0.205" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/layout/activity_main.xml" value="0.17603850050658562" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/layout/activity_mensaje_login.xml" value="0.1403985507246377" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/layout/activity_menu_login.xml" value="0.1" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/layout/activity_recuperar_contrasena.xml" value="0.17603850050658562" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/layout/activity_registrar.xml" value="0.17603850050658562" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/layout/activity_splash.xml" value="0.17603850050658562" />
         <entry key="..\:/Users/andre/AndroidStudioProjects/LoginFiina/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.291" />
         <entry key="..\:/Users/andre/AndroidStudioProjects/LoginFiina/app/src/main/res/drawable/androidmorado.xml" value="0.291" />
         <entry key="..\:/Users/andre/AndroidStudioProjects/LoginFiina/app/src/main/res/drawable/candado.xml" value="0.291" />
