@@ -13,6 +13,9 @@
         android:theme="@style/Theme.LoginFiina"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".perfilactivity"
+            android:exported="false" />
+        <activity
             android:name=".Splash.splash_Activity"
             android:exported="true">
             <intent-filter>
@@ -24,7 +27,7 @@
         <activity android:name=".Activitys.MensajeLoginActivity" />
         <activity android:name=".Activitys.Login.RegistrarseActivity" />
         <activity android:name=".Activitys.Login.RecuperarContrasenaActivity" />
-        <activity android:name=".Activitys.Login.LoginActivity"/>
+        <activity android:name=".Activitys.Login.LoginActivity" />
     </application>
 
 </manifest>
