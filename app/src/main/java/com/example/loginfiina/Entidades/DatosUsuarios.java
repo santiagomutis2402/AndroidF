@@ -6,7 +6,8 @@ public class DatosUsuarios {
     private String nombre;
     private String apellido;
     private String cedula;
-    private int tipo;
+    private String tipo_usuario;
+    private String puntajeac;
     private String password;
     private String created_at;
     private String updated_at;
@@ -15,6 +16,13 @@ public class DatosUsuarios {
     private String last_Login;
     private String correo;
 
+    public String getPuntajeac() {
+        return puntajeac;
+    }
+
+    public void setPuntajeac(String puntajeac) {
+        this.puntajeac = puntajeac;
+    }
 
     public int getId() {
         return id;
@@ -23,6 +31,7 @@ public class DatosUsuarios {
     public void setId(int id) {
         this.id = id;
     }
+
 
     public int getUsuario_id() {
         return usuario_id;
@@ -56,12 +65,12 @@ public class DatosUsuarios {
         this.cedula = cedula;
     }
 
-    public int getTipo() {
-        return tipo;
+    public String getTipo() {
+        return tipo_usuario;
     }
 
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
+    public void setTipo_usuario(String tipo_usuario) {
+        this.tipo_usuario = tipo_usuario;
     }
 
     public String getPassword() {

@@ -4,6 +4,7 @@ import retrofit2.Call;
 
 import com.example.loginfiina.Entidades.DatosUsuarios;
 import com.example.loginfiina.Request.UsuarioRequest;
+import com.example.loginfiina.Response.IdResponse;
 import com.example.loginfiina.Response.UsuarioResponse;
 
 import java.util.List;
@@ -19,8 +20,8 @@ public interface ApiInterface {
     Call<UsuarioResponse> login(@Body UsuarioRequest request);
 
     @POST("usuarios")
-    Call<Integer> postRegistrarUsuarios(@Body DatosUsuarios estudiante);
+    Call<IdResponse> postRegistrarUsuarios(@Body DatosUsuarios estudiante);
     @POST("datos_usuarios")
-    Call<Integer> postRegistrarDatosUsuarios(@Body DatosUsuarios estudiante);
+    Call<UsuarioResponse> postRegistrarDatosUsuarios(@Body DatosUsuarios estudiante);
 
 }
