@@ -15,6 +15,8 @@ import com.example.loginfiina.Activitys.MensajeLoginActivity;
 import com.example.loginfiina.Entidades.DatosUsuarios;
 import com.example.loginfiina.Activitys.Login.LoginActivity;
 import com.example.loginfiina.R;
+import com.example.loginfiina.Response.IdResponse;
+import com.example.loginfiina.Response.UsuarioResponse;
 import com.example.loginfiina.Services.ApiService;
 
 import retrofit2.Call;
@@ -68,23 +70,52 @@ public class RegistrarseActivity extends AppCompatActivity {
             estudiante.setPassword(password.getText().toString());
             estudiante.setApellido(apellido.getText().toString());
             estudiante.setCedula(cedula.getText().toString());
-            estudiante.setUsuario_id(3);
-            estudiante.setTipo(3);
+            estudiante.setTipo_usuario("estudiante");
 
-            Call<Integer> response1 = ApiService.getApiService().postRegistrarDatosUsuarios(estudiante);
-            response1.enqueue(new Callback<Integer>(){
+            Call<IdResponse> response1 = ApiService.getApiService(). postRegistrarUsuarios(estudiante);
+            response1.enqueue(new Callback<IdResponse>(){
 
                 @Override
-                public void onResponse(Call<Integer> call, Response<Integer> response) {
+                public void onResponse(Call<IdResponse> call, Response<IdResponse> response) {
                     if (response.isSuccessful()){
-                        int x = 1;
+                        DatosUsuarios estudiante = new DatosUsuarios();
+                        estudiante.setNombre(nombre.getText().toString());
+                        estudiante.setCorreo(correo.getText().toString());
+                        estudiante.setPassword(password.getText().toString());
+                        estudiante.setApellido(apellido.getText().toString());
+                        estudiante.setCedula(cedula.getText().toString());
+                        estudiante.setTipo_usuario("estudiante");
+                        estudiante.setPuntajeac("200");
+                        IdResponse id = response.body();
+                        estudiante.setUsuario_id(id.getId());
+                        Call<UsuarioResponse> responses = ApiService.getApiService(). postRegistrarDatosUsuarios(estudiante);
+                        responses.enqueue(new Callback<UsuarioResponse>(){
+
+                            @Override
+                            public void onResponse(Call<UsuarioResponse> call, Response<UsuarioResponse> response) {
+                                if (response.isSuccessful()){
+                                    UsuarioResponse id = response.body();
+                                }else{
+                                    int x = 1;
+                                }
+                            }
+
+                            @Override
+                            public void onFailure(Call<UsuarioResponse> call, Throwable t) {
+                                Toast.makeText(getApplicationContext(),"Datos del Usuario Creados Correctamente",Toast.LENGTH_LONG).show();
+                                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+                                startActivity(i);
+                                int x = 1;
+                            }
+
+                        });
                     }else{
                         int x = 1;
                     }
                 }
 
                 @Override
-                public void onFailure(Call<Integer> call, Throwable t) {
+                public void onFailure(Call<IdResponse> call, Throwable t) {
                     Toast.makeText(getApplicationContext(),"Datos del Usuario Creados Correctamente",Toast.LENGTH_LONG).show();
                     Intent i = new Intent(getApplicationContext(), LoginActivity.class);
                     startActivity(i);

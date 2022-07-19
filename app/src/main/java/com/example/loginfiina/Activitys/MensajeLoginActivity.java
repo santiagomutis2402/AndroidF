@@ -33,7 +33,7 @@ public class MensajeLoginActivity extends AppCompatActivity {
         Nombre = i.getStringExtra("Nombre");
         Tipo = i.getIntExtra("Tipaje",2);
 
-        imgCargando = (ImageView)findViewById(R.id.imgCargando);
+       // imgCargando = (ImageView)findViewById(R.id.imgCargando);
         imgCargando.setBackgroundResource(R.drawable.cargando);
 
         animationDrawable = (AnimationDrawable)imgCargando.getBackground();
@@ -60,7 +60,7 @@ public class MensajeLoginActivity extends AppCompatActivity {
         txtNombre = (TextView)findViewById(R.id.txtNombreLogin);
         txtNombre.setText(Tipaje+"\n"+Nombre);
 
-        imgCargando = (ImageView)findViewById(R.id.imgCargando);
+     //   imgCargando = (ImageView)findViewById(R.id.imgCargando);
         imgCargando.setBackgroundResource(R.drawable.cargando);
 
     }

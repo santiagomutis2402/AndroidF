@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BarraProgreso.Barra_Progreso"
+    android:background="@color/MoradoFondo"
     >
     <ImageView
         android:id="@+id/animation"
@@ -34,7 +35,7 @@
         android:textStyle="bold"
         android:textSize="20dp"
         android:textAllCaps="false"
-        android:backgroundTint="#7096AD"
+        android:backgroundTint="@color/MoradoInput"
         android:textColor="#FFFFFF"
         />
 </RelativeLayout>
