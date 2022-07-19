@@ -3,11 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Astri/AndroidStudioProjects/AndroidF/app/src/main/res/layout/activity_jugabilidad3.xml" value="0.1" />
-        <entry key="..\:/Users/Astri/AndroidStudioProjects/AndroidF/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
-        <entry key="..\:/Users/Astri/AndroidStudioProjects/AndroidF/app/src/main/res/layout/activity_main_juego3.xml" value="0.21784420289855072" />
-        <entry key="..\:/Users/Astri/AndroidStudioProjects/AndroidF/app/src/main/res/layout/activity_video_lectura.xml" value="0.21784420289855072" />
-        <entry key="..\:/Users/Astri/AndroidStudioProjects/AndroidF/app/src/main/res/layout/barra_progreso.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/HOME/AndroidStudioProjects/AndroidF/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/HOME/AndroidStudioProjects/AndroidF/app/src/main/res/layout/activity_registro.xml" value="0.14" />
+        <entry key="..\:/Users/HOME/AndroidStudioProjects/AndroidF/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/HOME/AndroidStudioProjects/AndroidF/app/src/main/res/layout/activity_tutorial.xml" value="0.25" />
+        <entry key="..\:/Users/HOME/AndroidStudioProjects/AndroidF/app/src/main/res/layout/activity_tutorial_main.xml" value="0.22" />
+        <entry key="..\:/Users/HOME/AndroidStudioProjects/AndroidF/app/src/main/res/layout/activity_video_lectura.xml" value="0.12" />
         <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/drawable-v24/cancel.xml" value="0.193" />
         <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/drawable-v24/cargando.xml" value="0.205" />
         <entry key="..\:/Users/LuisPc/Documents/GitHub/AndroidF/app/src/main/res/drawable-v24/rounded_item.xml" value="0.193" />
