@@ -25,13 +25,7 @@ public class ProcesosDB {
                 ContentValues values = new ContentValues();
                 values.put("partida",numPartida);
                 values.put("jugador",partida.getJugador());
-                values.put("juego",partida.getJuego());
-                values.put("nivel",partida.getNivel());
-                values.put("pregunta",partida.getPregunta());
-                values.put("respuestas",partida.getRespuestas());
-                values.put("puntaje",partida.getPuntaje());
-                values.put("fecha",partida.getFecha());
-                values.put("hora",partida.getHora());
+
 
                 return db.insert("partida",null,values);
             }
@@ -51,15 +45,9 @@ public class ProcesosDB {
                 if (cursor.moveToFirst()){
                     do{
                         Partida part = new Partida();
-                        part.setPartida(cursor.getInt(0));
                         part.setJugador(cursor.getString(1));
-                        part.setJuego(cursor.getString(2));
-                        part.setNivel(cursor.getString(3));
-                        part.setPregunta(cursor.getString(4));
-                        part.setRespuestas(cursor.getString(5));
                         part.setPuntaje(cursor.getInt(6));
-                        part.setFecha(cursor.getString(7));
-                        part.setHora(cursor.getString(8));
+
 
                         partidas.add(part);
 

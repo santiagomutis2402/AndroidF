@@ -3,6 +3,7 @@ package com.example.loginfiina.Services;
 import retrofit2.Call;
 
 import com.example.loginfiina.Entidades.DatosUsuarios;
+import com.example.loginfiina.Request.PartidaRequest;
 import com.example.loginfiina.Request.UsuarioRequest;
 import com.example.loginfiina.Response.IdResponse;
 import com.example.loginfiina.Response.UsuarioResponse;
@@ -23,5 +24,7 @@ public interface ApiInterface {
     Call<IdResponse> postRegistrarUsuarios(@Body DatosUsuarios estudiante);
     @POST("datos_usuarios")
     Call<UsuarioResponse> postRegistrarDatosUsuarios(@Body DatosUsuarios estudiante);
+    @POST("usuarios")
+    Call<Integer> postRegistrarPartida(@Body PartidaRequest partida);
 
 }

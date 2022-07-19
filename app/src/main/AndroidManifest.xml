@@ -16,9 +16,6 @@
             android:name=".Activitys.Lecciones.VideoLecturaActivity"
             android:exported="false" />
         <activity
-            android:name=".perfilactivity"
-            android:exported="false" />
-        <activity
             android:name=".Splash.splash_Activity"
             android:exported="true">
             <intent-filter>
@@ -31,6 +28,8 @@
         <activity android:name=".Activitys.Login.RegistrarseActivity" />
         <activity android:name=".Activitys.Login.RecuperarContrasenaActivity" />
         <activity android:name=".Activitys.Login.LoginActivity" />
+        <activity
+            android:name=".Activitys.Resumen.ResumenActivity"/>
     </application>
 
 </manifest>
