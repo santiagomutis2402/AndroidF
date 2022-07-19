@@ -19,6 +19,12 @@
             android:name=".perfilactivity"
             android:exported="false" />
         <activity
+            android:name=".Tutorial.TutorialActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".Tutorial.TutorialMainActivity"
+            android:exported="false"/>
+        <activity
             android:name=".Splash.splash_Activity"
             android:exported="true">
             <intent-filter>
